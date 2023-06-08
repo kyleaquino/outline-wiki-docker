@@ -6,7 +6,7 @@ ENV NODE_ENV=production
 
 WORKDIR $APP_PATH
 
-COPY run.sh /opt/outline/
+COPY run.sh /opt/outline/run.sh
 RUN chmod +x /opt/outline/run.sh
 CMD /opt/outline/run.sh
 
