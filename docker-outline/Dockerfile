@@ -6,7 +6,7 @@ ENV NODE_ENV=production
 
 WORKDIR $APP_PATH
 
-COPY run.sh /opt/outline/run.sh
+COPY /docker-outline/run.sh /opt/outline/run.sh
 RUN chmod +x /opt/outline/run.sh
 ENTRYPOINT ["npm", "start"]
 
