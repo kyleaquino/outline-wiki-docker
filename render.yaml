@@ -8,7 +8,7 @@ databases:
 
 services:
 - type: redis
-    name: outline-wiki-redis
+    name: lightning
     plan: starter
     region: singapore
     ipAllowList: []
@@ -70,7 +70,7 @@ services:
     - key: REDIS_URL
       fromService:
         type: redis
-        name: outline-wiki-redis
+        name: lightning
         property: connectionString
 
 
