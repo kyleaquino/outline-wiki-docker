@@ -6,9 +6,9 @@ ENV NODE_ENV=production
 
 WORKDIR $APP_PATH
 
-ADD run.sh /opt/outline/
-CMD /opt/outline/run.sh
+COPY run.sh /opt/outline/
 RUN chmod +x /opt/outline/run.sh
+CMD /opt/outline/run.sh
 
 EXPOSE 3000
 
