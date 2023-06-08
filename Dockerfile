@@ -8,7 +8,7 @@ WORKDIR $APP_PATH
 
 COPY run.sh /opt/outline/run.sh
 RUN chmod +x /opt/outline/run.sh
-ENTRYPOINT ["/opt/outline/run.sh"]
+ENTRYPOINT ["npm", "start"]
 
 EXPOSE 3000
 
