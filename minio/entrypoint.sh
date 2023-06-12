@@ -1,6 +1,14 @@
 #!/usr/bin/env sh
 # wrapper for docker entrypoint that takes into account the PORT env var
 
+# Install MinIO Command Line Tools
+curl https://dl.min.io/client/mc/release/linux-amd64/mc \
+  --create-dirs \
+  -o /opt/render/minio-binaries/mc
+
+chmod +x /opt/render/minio-binaries/mc
+export PATH=$PATH:/opt/render/minio-binaries/
+
 # Create a bucket and set access policy
 export MINIO_BUCKET=minio-bucket
 export MINIO_POLICY_FILE=/tmp/policy.json
