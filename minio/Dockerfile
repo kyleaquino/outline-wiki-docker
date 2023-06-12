@@ -8,5 +8,4 @@ RUN chmod +x /opt/render/entrypoint.sh
 RUN chmod +x /opt/render/init-bucket.sh
 
 ENTRYPOINT ["/opt/render/entrypoint.sh"]
-
-CMD ["/opt/render/init-bucket.sh"]
+CMD ["/bin/bash", "/opt/render/init-bucket.sh"]
