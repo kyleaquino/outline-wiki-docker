@@ -7,4 +7,4 @@ COPY /minio/init-bucket.sh /opt/render/init-bucket.sh
 RUN chmod +x /opt/render/entrypoint.sh
 RUN chmod +x /opt/render/init-bucket.sh
 
-ENTRYPOINT ["/opt/render/entrypoint.sh && /opt/render/init-bucket.sh"]
+ENTRYPOINT ["/opt/render/entrypoint.sh"]
