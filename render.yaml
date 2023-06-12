@@ -27,10 +27,6 @@ services:
     envVars:
       - key: MINIO_BUCKET
         value: "minio-bucket"
-      - key: MINIO_ACCESS_KEY
-        generateValue: true
-      - key: MINIO_SECRET_KEY
-        generateValue: true
       - key: MINIO_ROOT_USER
         generateValue: true
       - key: MINIO_ROOT_PASSWORD
