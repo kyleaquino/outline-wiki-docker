@@ -40,10 +40,6 @@ services:
     env: docker
     dockerfilePath: ./docker-outline/Dockerfile
     autoDeploy: false
-    disk:
-      name: outline-persistent-storage
-      mountPath: /data
-      sizeGB: 5
     envVars:
       - key: URL
         sync: false

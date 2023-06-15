@@ -17,3 +17,5 @@ cp /opt/render/policy.json $MINIO_POLICY_FILE
 mc alias set local http://localhost:9000 $MINIO_ROOT_USER $MINIO_ROOT_PASSWORD
 mc mb local/$MINIO_BUCKET
 mc policy set local/$MINIO_BUCKET $MINIO_POLICY_FILE
+
+minio
